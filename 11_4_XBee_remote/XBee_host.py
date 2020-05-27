@@ -17,29 +17,29 @@ print("Enter AT mode.")
 print(char.decode())
 
 
-s.write("ATMY 87\r\n".encode())
+s.write("ATMY 0x187\r\n".encode())
 
 char = s.read(3)
 
-print("Set MY 87.")
+print("Set MY 0x187.")
 
 print(char.decode())
 
 
-s.write("ATDL 78\r\n".encode())
+s.write("ATDL 0x178\r\n".encode())
 
 char = s.read(3)
 
-print("Set DL 78.")
+print("Set DL 0x178.")
 
 print(char.decode())
 
 
-s.write("ATID 63\r\n".encode())
+s.write("ATID 0x3\r\n".encode())
 
 char = s.read(3)
 
-print("Set PAN ID 63.")
+print("Set PAN ID 0x3.")
 
 print(char.decode())
 

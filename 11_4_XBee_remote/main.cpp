@@ -49,19 +49,19 @@ int main(){
   }
 
 
-  xbee.printf("ATMY 78\r\n");
+  xbee.printf("ATMY 0x178\r\n");
 
-  reply_messange(xbee_reply, "setting MY : 78");
-
-
-  xbee.printf("ATDL 87\r\n");
-
-  reply_messange(xbee_reply, "setting DL : 87");
+  reply_messange(xbee_reply, "setting MY : 0x178");
 
 
-  xbee.printf("ATID 63\r\n");
+  xbee.printf("ATDL 0x187\r\n");
 
-  reply_messange(xbee_reply, "setting PAN ID : 63");
+  reply_messange(xbee_reply, "setting DL : 0x187");
+
+
+  xbee.printf("ATID 0x3\r\n");
+
+  reply_messange(xbee_reply, "setting PAN ID : 0x3");
 
 
   xbee.printf("ATWR\r\n");
